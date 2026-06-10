@@ -65,7 +65,7 @@ leading-[0.9]
               muted
               loop
               playsInline
-              preload="metadata"
+              preload="none"
               className="
                 w-full
                 h-[600px]
@@ -93,6 +93,7 @@ leading-[0.9]
     muted
     loop
     playsInline
+    preload="none"
     className="
       w-full
       h-[600px]
