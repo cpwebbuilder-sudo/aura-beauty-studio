@@ -10,7 +10,7 @@ export default function CTA() {
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="max-w-6xl mx-auto text-center"
+        className="max-w-4xl mx-auto text-center"
       >
 
         <p className="text-yellow-500 tracking-[6px] mb-6">
@@ -19,10 +19,9 @@ export default function CTA() {
 
         <h2
           className="
-          text-5xl
-          md:text-7xl
+         text-7xl md:text-9xl
+font-black
           lg:text-8xl
-          font-bold
           leading-tight
           text-white
           "
@@ -47,17 +46,17 @@ text-gray-300
 
         <button
           className="
-          mt-12
-          px-10
-          py-5
-          bg-yellow-500
-          text-black
-          rounded-full
-          font-semibold
-          hover:scale-105
-          transition-all
-          duration-300
-          "
+bg-yellow-500
+text-black
+px-8
+py-4
+mt-12
+rounded-full
+font-semibold
+hover:scale-105
+transition-all
+duration-300
+"
         >
           Book Appointment
         </button>

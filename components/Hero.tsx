@@ -43,7 +43,7 @@ export default function Hero() {
   font-bold
   "
 >
-  AURA
+  PARLOUR
 </motion.h1>
 <motion.p
   initial={{ opacity: 0 }}
@@ -61,7 +61,7 @@ export default function Hero() {
    
 
     <p className="text-white mt-6 text-lg">
-      Beauty Beyond Ordinary
+      BEAUTY IS AN EXPERIENCE
     </p>
 
     <button className="mt-8 px-8 py-4 border border-yellow-500 text-white">

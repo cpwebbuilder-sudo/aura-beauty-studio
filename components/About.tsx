@@ -19,17 +19,15 @@ export default function About() {
           transition={{ duration: 1 }}
          className="
 text-5xl
-md:text-7xl
+md:text-5xl
 lg:text-8xl
 font-bold
 leading-[0.9]
  "
         >
-          BEAUTY
+          BEAUTY IS AN
           <br />
-          IS AN
-          <br />
-          EXPERIENCE
+          <span className="text-white">EXPERIENCE</span>
         </motion.h2>
 
         {/* Description */}

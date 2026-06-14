@@ -10,7 +10,6 @@ import Services from "@/components/Services";
 import Transformations from "@/components/Transformations";
 import Marquee from "@/components/Marquee";
 import ReelsWall from "@/components/ReelsWall";
-import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import FadeUp from "@/components/FadeUp";
@@ -18,6 +17,7 @@ import Contact from "@/components/Contact";
 import Testimonials from "@/components/Testimonials";
 import Stats from "@/components/Stats";
 import BookingForm from "@/components/BookingForm";
+
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
@@ -34,8 +34,13 @@ export default function Home() {
   }
 
   return (
-    <main className="bg-black">
+    <main className="relative overflow-hidden">
+
+      {/* Background Image */}
+    
+
       <Navbar />
+
       <Hero />
 
       <FadeUp>
@@ -51,27 +56,32 @@ export default function Home() {
       <FadeUp>
         <Transformations />
       </FadeUp>
-       <FadeUp>
+
+      <FadeUp>
         <Testimonials />
       </FadeUp>
-  <FadeUp>
+
+      <FadeUp>
         <Stats />
       </FadeUp>
-<FadeUp>
+
+      <FadeUp>
         <BookingForm />
       </FadeUp>
+
       <FadeUp>
         <ReelsWall />
       </FadeUp>
 
+
       <FadeUp>
-        <CTA />
-      </FadeUp>
-<FadeUp>
         <Contact />
       </FadeUp>
+
       <Footer />
+
       <WhatsAppButton />
+
     </main>
   );
 }

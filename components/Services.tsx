@@ -63,9 +63,9 @@ export default function Services() {
 
               <span
                 className="
-                  text-4xl
-                  md:text-5xl
-                  font-bold
+                  text-7xl md:text-6xl
+font-black
+tracking-tight
                   group-hover:text-yellow-500
                   transition
                 "

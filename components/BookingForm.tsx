@@ -53,12 +53,17 @@ Service: ${service}
             onChange={(e) =>
               setName(e.target.value)
             }
-            className="
-            w-full
-            bg-zinc-900
-            p-5
-            rounded-xl
-            "
+          className="
+w-full
+bg-white/5
+backdrop-blur-xl
+border
+border-white/10
+rounded-2xl
+px-6
+py-4
+text-white
+"
           />
 
           <input
@@ -68,12 +73,17 @@ Service: ${service}
             onChange={(e) =>
               setPhone(e.target.value)
             }
-            className="
-            w-full
-            bg-zinc-900
-            p-5
-            rounded-xl
-            "
+           className="
+w-full
+bg-white/5
+backdrop-blur-xl
+border
+border-white/10
+rounded-2xl
+px-6
+py-4
+text-white
+"
           />
 
           <select

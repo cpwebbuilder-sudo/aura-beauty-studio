@@ -43,6 +43,8 @@ export default function ReelsWall() {
               bg-zinc-900
               border
               border-zinc-800
+              hover:scale-105
+transition-all duration-500
             "
           >
             <video

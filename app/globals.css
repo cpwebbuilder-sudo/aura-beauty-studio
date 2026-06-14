@@ -1,14 +1,40 @@
 @import "tailwindcss";
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background: #050505;
   color: white;
-  min-width: 1400px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(234,179,8,.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 80% 60%,
+      rgba(234,179,8,.08),
+      transparent 30%
+    );
+
+  z-index: -1;
 }
 
 html {
   scroll-behavior: smooth;
 }
+
 @keyframes marquee {
   from {
     transform: translateX(0%);
@@ -23,23 +49,28 @@ html {
   display: inline-block;
   animation: marquee 15s linear infinite;
 }
-html,
-body {
-  overflow-x: hidden;
-}
-body {
-  cursor: none;
-}
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.02;
-  z-index: 9999;
 
-  background-image:
-    radial-gradient(circle, white 1px, transparent 1px);
 
-  background-size: 25px 25px;
+.glass {
+  background: rgba(255,255,255,0.04);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 8px 32px rgba(0,0,0,.45);
+}
+
+.glass-gold {
+  background: rgba(255,255,255,0.03);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(234,179,8,0.15);
+
+  box-shadow:
+    0 0 40px rgba(234,179,8,0.08);
 }

@@ -39,13 +39,14 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
-              className="
-                bg-zinc-900
-border
-border-zinc-800
-                p-8
-                rounded-3xl
-              "
+            className="
+glass
+rounded-3xl
+p-8
+hover:border-yellow-500/30
+transition-all
+duration-500
+"
             >
               <p className="text-gray-300 mb-6">
                 "{item.text}"

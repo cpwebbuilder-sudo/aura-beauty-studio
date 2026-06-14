@@ -43,7 +43,7 @@ export default function Navbar() {
           hover:text-[#D4AF37]
           ${
             scrolled
-              ? "bg-black/80 backdrop-blur-md border-b border-white/10 py-4"
+              ? "bg-black/30 backdrop-blur-2xl border-b border-white/10 py-4"
               : "bg-transparent py-6"
           }
         `}
